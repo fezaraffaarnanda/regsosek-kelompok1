@@ -1,7 +1,7 @@
 package regsosek.Util;
 
-import regsosek.entity.Ruta;
-import regsosek.entity.Penduduk;
+import regsosek.models.Ruta;
+import regsosek.models.Penduduk;
 
 public class AppManager {
     ActionHandler actionHandler = new ActionHandler(this);

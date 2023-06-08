@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 /**
  *

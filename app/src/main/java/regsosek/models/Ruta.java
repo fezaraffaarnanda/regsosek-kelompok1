@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -21,8 +21,6 @@ public class Ruta implements Model {
 
     public Ruta() {
         anggotaRumahTangga = new ArrayList<Penduduk>();
-        // this.id = indeks;
-        // indeks++;
     }
     public Ruta(int id) {
         this.id = id;
@@ -33,7 +31,7 @@ public class Ruta implements Model {
         return "INSERT INTO ruta (provinsi, kabkot, kecamatan, desakel, sls, nama_sls, lokasi_data, "
                 + "kelompok_keluarga, kepala_keluarga, no_bangunan, no_keluarga, id_landmark, id) "
                 + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
-        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
     }
 
     @Override
@@ -42,11 +40,11 @@ public class Ruta implements Model {
         pstmt.setString(2, getLokasi().getKabKot());
         pstmt.setString(3, getLokasi().getKecamatan());
         pstmt.setString(4, getLokasi().getDesaKel());
-        pstmt.setString(5, getLokasi().getKodeSLS() + "-" + getLokasi().getKodeSubSLS()); //belum ada gui
-        pstmt.setString(6, getLokasi().getNamaSLS()); //belum ada gui
-        pstmt.setString(7, getLokasi().getLokasiPendataan());//belum ada gui
+        pstmt.setString(5, getLokasi().getKodeSLS() + "-" + getLokasi().getKodeSubSLS());
+        pstmt.setString(6, getLokasi().getNamaSLS());
+        pstmt.setString(7, getLokasi().getLokasiPendataan());
         pstmt.setString(8, kelompokKeluarga);//ganti jenis wilayah
-        pstmt.setString(9, kepalaKeluarga);//belum ada gui
+        pstmt.setString(9, kepalaKeluarga);
         pstmt.setString(10, noUrutBangunan);
         pstmt.setString(11, noUrutKeluarga);
         pstmt.setString(12, idLandmark);

@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 /**
  *
@@ -17,15 +17,7 @@ public class Kesulitan {
         this.jenisKesulitan = jenisKesulitan;
     }
 
-    /**
-     * @param jenisKesulitan
-     * @return the kesulitan
-     * @throws java.lang.Exception
-     */
-    
-    //INI BELOM ADA SETTER BUAT JENIS KESULITAN AKHIRE TAK BUAT//
-    
-   //(zein ini hasil kodingan astri dan ninis) 
+
    public String getJenisKesulitan(){
     return jenisKesulitan;
    }
@@ -37,9 +29,6 @@ public class Kesulitan {
     }
 
 
-    /**
-     * @return the kesulitan
-     */
     public int getKesulitan() {
         return kesulitan;
     }

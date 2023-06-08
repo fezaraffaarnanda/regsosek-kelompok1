@@ -4,12 +4,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
-import regsosek.entity.Kesulitan;
-import regsosek.entity.Lokasi;
-import regsosek.entity.Pekerjaan;
+import regsosek.models.Kesulitan;
+import regsosek.models.Lokasi;
+import regsosek.models.Pekerjaan;
 
-import regsosek.entity.Ruta;
-import regsosek.entity.Usaha;
+import regsosek.models.Ruta;
+import regsosek.models.Usaha;
 
 public class ActionHandler implements ActionListener{
     AppManager appManager;
@@ -20,7 +20,6 @@ public class ActionHandler implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
         String command = e.getActionCommand();
 
         switch (command){

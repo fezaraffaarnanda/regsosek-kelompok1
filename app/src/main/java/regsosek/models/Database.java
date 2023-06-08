@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,7 +26,6 @@ public class Database implements Serializable {
         if (instance == null) {
             instance = new Database();
         }
-
         return instance;
     }
     
@@ -54,7 +53,6 @@ public class Database implements Serializable {
                 }
             }
         }
-
         return id;
     }
 

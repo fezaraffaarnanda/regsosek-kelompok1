@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -22,8 +22,11 @@ public class Penduduk implements Model {
     private Pekerjaan pekerjaan;
     private Usaha usaha;
 
-    public Penduduk() {}
+    public Penduduk() {
+
+    }
     public Penduduk(int id) {
+
         this.id = id;
     }
 
@@ -112,31 +115,21 @@ public class Penduduk implements Model {
         return art;
     }
 
-    /**
-     * @return the id
-     */
     public int getId() {
         return id;
     }
 
-    /**
-     * @return the rutaId
-     */
+
     public int getRutaId() {
         return rutaId;
     }
 
-    /**
-     * @return the noUrut
-     */
+
     public String getNoUrut() {
         return noUrut;
     }
 
- /**
-     * @param noUrut the noUrut to set
-     * @throws java.lang.Exception
-     */
+
     
     public void setNoUrut(String noUrut) throws Exception {
          try {
@@ -149,17 +142,12 @@ public class Penduduk implements Model {
         }
     }
 
-    /**
-     * @return the NIK
-     */
+
     public String getNIK() {
         return NIK;
     }
 
-/**
-     * @param NIK the NIK to set
-     * @throws java.lang.Exception
-     */
+
     
     public void setNIK(String NIK) throws Exception {
         try {
@@ -172,63 +160,43 @@ public class Penduduk implements Model {
         }
     }
 
-    /**
-     * @return the nama
-     */
+
     public String getNama() {
         return nama;
     }
 
-    /**
-     * @param nama the nama to set
-     */
+
     public void setNama(String nama) {
         this.nama = nama;
     }
 
-    /**
-     * @return the jenisKelamin
-     */
+
     public int isJenisKelamin() {
         return jenisKelamin;
     }
 
- /**
-     * @param jenisKelamin the jenisKelamin to set
-     * @throws java.lang.Exception
-     */
+
     
     public void setJenisKelamin(int jenisKelamin) throws Exception {
         this.jenisKelamin = jenisKelamin;
     }
 
-    /**
-     * @return the statusKepala
-     */
+
     public int getStatusKepala() {
         return statusKepala;
     }
 
-    /**
-     * @param statusKepala the statusKepala to set
-     * @throws java.lang.Exception
-     */
-    
+
     public void setStatusKepala(int statusKepala) throws Exception {
         this.statusKepala = statusKepala;
     }
 
-    /**
-     * @return the usia
-     */
+
     public String getUsia() {
         return usia;
     }
 
-/**
-     * @param usia the usia to set
-     * @throws java.lang.Exception
-     */
+
     
     public void setUsia(String usia) throws Exception {
         try {
@@ -241,48 +209,25 @@ public class Penduduk implements Model {
         }
     }
 
-    /**
-     * @return the kesulitan
-     */
+
     public Kesulitan getKesulitan() {
         return kesulitan;
     }
 
-/**
-     * @param kesulitan the kesulitan to set
-     * @throws java.lang.Exception
-     */
+
     
     public void setKesulitan(Kesulitan kesulitan) throws Exception {
-        // try {
-        //      if (kesulitan.getKesulitan()< 5) {
-        //         throw new Exception("Usia harus lebih dari 5 tahun");
-        //     } 
-        //     this.kesulitan = kesulitan;
-        //     } catch (Exception e) {
-        //     System.out.println(e.getMessage());
-        // }
         this.kesulitan = kesulitan;
-       
     }
 
-    /**
-     * @return the pendidikanTertinggi
-     */
+
     public int getPendidikanTertinggi() {
         return pendidikanTertinggi;
     }
 
- /**
-     * @param pendidikanTertinggi the pendidikanTertinggi to set
-     * @throws java.lang.Exception
-     */
     
     public void setPendidikanTertinggi(int pendidikanTertinggi) throws Exception{
         try {
-            //  if (usia< 5) {
-            //     throw new Exception("Usia harus lebih dari 5 tahun");
-            //  }
              if (pendidikanTertinggi>5||pendidikanTertinggi<1){
                     throw new Exception("Harap isi Pendidikan Tertinggi dengan angka 1 sampai 5");
             }
@@ -293,23 +238,14 @@ public class Penduduk implements Model {
         }
     }
 
-    /**
-     * @return the pekerjaan
-     */
+
     public Pekerjaan getPekerjaan() {
         return pekerjaan;
     }
 
- /**
-     * @param pekerjaan the pekerjaan to set
-     * @throws java.lang.Exception
-     */
-    
+
     public void setPekerjaan(Pekerjaan pekerjaan) throws Exception {
       try {
-            //  if (usia< 5) {
-            //     throw new Exception("Usia harus lebih dari 5 tahun");
-            // }
             this.pekerjaan = pekerjaan;
              
             } catch (Exception e) {
@@ -317,18 +253,11 @@ public class Penduduk implements Model {
         } 
     }
 
-    /**
-     * @return the usaha
-     */
+
     public Usaha getUsaha() {
         return usaha;
     }
 
-  /**
-     * @param usaha the usaha to set
-     * @throws java.lang.Exception
-     */
-    
     public void setUsaha(Usaha usaha) throws Exception {
         // try {
         //      if (usia< 5) {
@@ -341,13 +270,6 @@ public class Penduduk implements Model {
         this.usaha = usaha;
     }
 
-    /**
-     * @return the kepalaKeluarga
-     */
-
-    /**
-     * @param rutaId the rutaId to set
-     */
     public void setRutaId(int rutaId) {
         this.rutaId = rutaId;
     }

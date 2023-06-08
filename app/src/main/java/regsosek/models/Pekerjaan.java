@@ -1,4 +1,4 @@
-package regsosek.entity;
+package regsosek.models;
 
 /**
  *
@@ -25,29 +25,14 @@ public class Pekerjaan {
         return lapanganUsaha;
     }
 
-/**
-     * @param lapanganUsaha the lapanganUsaha to set
-     * @throws java.lang.Exception
-     */
-    
-    //(zein ini hasil kodingan astri dan ninis)
     public void setLapanganUsaha(String lapanganUsaha) throws Exception {    
         this.lapanganUsaha = lapanganUsaha;
     }
 
-    /**
-     * @return the statusKependudukan
-     */
     public String getStatusKependudukan() {
         return statusKependudukan;
     }
 
-  /**
-     * @param statusKependudukan the statusKependudukan to set
-     * @throws java.lang.Exception
-     */
-    
-    //(zein ini hasil kodingan astri dan ninis)
     public void setStatusKependudukan(int statusKependudukan) throws Exception {
        try {
                 if (statusKependudukan<1||statusKependudukan>8){
