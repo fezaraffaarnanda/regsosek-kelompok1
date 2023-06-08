@@ -6,10 +6,6 @@ import java.util.List;
 import java.sql.*;
 
 /**
- * TODO:
- * Buat method getAll, getWhere yang dapat dipakai untuk tabel manapun, return ResultSet.
- * Nanti kelas2 Model dapat memanggil method tersebut dan parse hasil dari ResultSet.
- * Saat baca ResultSet gunakan syntax try (ResultSet rs = Database.getAll()).
  * @author FEZA
  */
 public class Database implements Serializable {
@@ -18,7 +14,7 @@ public class Database implements Serializable {
     private final String DB_TYPE = "mysql";
     private final String DB_HOST = "localhost";
     private final String DB_PORT = "3306";
-    private final String DB_NAME = "kelduareg";
+    private final String DB_NAME = "regsosek";
     private final String DB_USER = "root";
     private final String DB_PASS = "";
 
@@ -57,16 +53,7 @@ public class Database implements Serializable {
     }
 
     public List<Ruta> getAllRuta() {
+
         return new ArrayList<>();
     }
-
-    // public Connection getConnection() throws SQLException {
-    //     return DriverManager.getConnection(String.format(
-    //         "jdbc:%s://%s:%s/%s",
-    //             DB_TYPE,
-    //             DB_HOST,
-    //             DB_PORT,
-    //             DB_NAME
-    //     ), DB_USER, DB_PASS);
-    // }
 }
