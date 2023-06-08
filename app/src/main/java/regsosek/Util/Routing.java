@@ -6,7 +6,7 @@ public class Routing {
     public Routing(AppManager appManager){
         this.appManager = appManager;
     }
-
+    // method untuk ganti halaman, ditandakan dgn screen index
     public void showScreen(int screenIndex) {
         for (int i = 0; i < appManager.ui.bgPanel.length; i++) {
             if (i == screenIndex) {

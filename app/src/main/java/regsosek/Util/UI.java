@@ -203,8 +203,7 @@ public class UI {
     }
 
     public void inputField1(){
-        
-        createBackgroundFull(0, "bg.png");
+        createBackgroundFull(0, "bg2.png");
         provinsiTextField = createTextField(0, 600, 203, 100, 40, 30, 3);
         kabKotTextField = createTextField(0, 600, 303, 100, 40, 30, 3);
         kecamatanTextField = createTextField(0, 600, 403, 130, 40, 30, 4);
@@ -220,7 +219,7 @@ public class UI {
     }   
 
     public void inputField2(){
-        createBackgroundFull(1, "bg.png");
+        createBackgroundFull(1, "bg2.png");
         slsTextField = createTextField(1, 600, 203, 160, 40, 30, 5);
         subSlsTextField = createTextField(1, 800, 203, 100, 40, 30, 3);
         namaSlsTextField = createTextField(1, 600, 303, 520, 40, 30, 14);
@@ -239,7 +238,7 @@ public class UI {
     }
 
     public void inputField3(){
-        createBackgroundFull(2, "bg.png");
+        createBackgroundFull(2, "bg2.png");
         namaKepalaKeluargaTextField = createTextField(2, 600, 203, 520, 40, 30, 14);
         urutBangunanTextField = createTextField(2, 600, 303, 160, 40, 30, 5);
         urutKelTextField = createTextField(2, 600, 403, 160, 40, 30, 5);
